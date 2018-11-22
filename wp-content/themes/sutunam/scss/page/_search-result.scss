@@ -1,0 +1,41 @@
+/* Search result style */
+
+.search {
+    .search-result-heading {
+        text-align: center;
+        padding: 0 15px;
+        h1 {
+            margin: 30px auto;
+        }
+    }
+    .search-result-content {
+        margin: 0 -1px;
+        .result-block {
+            float: left;
+            width: 25%;
+            padding: 0 1px;
+            margin: 0 0 35px;
+            .img-wrapper {
+                margin: 0 0 10px;
+            }
+            .entry-title {
+                color: $main-color;
+                font-size: 13px;
+                margin: 0;
+                padding: 0 10px 10px;
+                a {
+                    color: $main-color;
+                }
+            }
+        }
+    }
+
+    @include bp(max-width, $tablet - 1) {
+        .search-result-heading {
+            h1 {
+                font-size: 20px;
+                margin: 20px auto;
+            }
+        }
+    }
+}
